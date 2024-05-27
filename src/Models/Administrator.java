@@ -11,8 +11,7 @@ package Models;
 public class Administrator {
     
     private int id;
-    private String ime;
-    private String prezime;
+    private String email;
     private String sifra;
 
     public int getId() {
@@ -23,23 +22,17 @@ public class Administrator {
         this.id = id;
     }
 
-    public String getIme() {
-        return ime;
-    }
+    
 
-    public void setIme(String ime) {
-        this.ime = ime;
-    }
+    public String getEmail() {
+		return email;
+	}
 
-    public String getPrezime() {
-        return prezime;
-    }
+	public void setEmail(String email) {
+		this.email = email;
+	}
 
-    public void setPrezime(String prezime) {
-        this.prezime = prezime;
-    }
-
-    public String getSifra() {
+	public String getSifra() {
         return sifra;
     }
 
