@@ -12,7 +12,7 @@ import java.util.List;
  *
  * @author student2
  */
-public class LoginController {
+public class AdministratorController {
     
     private AdministratorDAO adminDAO;
     
