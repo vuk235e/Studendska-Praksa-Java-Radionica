@@ -9,7 +9,7 @@ import Utilities.DBConnection;
 
 public class AdministratorDAO {
 
-	public void addAdministrator(Administrator a) {
+	public boolean addAdministrator(Administrator a) {
 		String sql = "INSERT INTO administrator (email, sifra) VALUES (?, ?)";
 		Connection con;
 		try {
@@ -18,9 +18,10 @@ public class AdministratorDAO {
 			st.setString(1, a.getEmail());
 			st.setString(2, a.getSifra());
 			st.executeUpdate();
+                        return true;
 		} catch (SQLException e) {
 			// TODO Auto-generated catch block
-			e.printStackTrace();
+			return false;
 		}
 			
 		}
